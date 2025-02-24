@@ -1,0 +1,184 @@
+<html>
+<head>
+  <title>Portale Lavoro</title>
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css">
+
+  <!-- jQuery -->
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <!-- Popper.js -->
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js"></script>
+  <!-- Bootstrap JS -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.min.js"></script>
+
+  <style>
+    /* Impostazioni globali per body e html */
+    html, body {
+      height: 100%;
+      margin: 0;
+      display: flex;
+      flex-direction: column;
+    }
+
+    .navbar {
+      background-color: #343a40;
+    }
+    .navbar-brand {
+      color: #f8f9fa !important;
+      font-weight: bold;
+    }
+    .nav-link {
+      color: #f8f9fa !important;
+    }
+    .nav-link:hover {
+      background-color: #495057;
+      border-radius: 5px;
+    }
+    .container {
+      padding-top: 30px;
+      flex-grow: 1;  /* Permette di espandere la sezione centrale per riempire lo spazio disponibile */
+    }
+    .card {
+      border-radius: 8px;
+      box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+      margin-bottom: 20px;
+    }
+    .card-header {
+      background-color: #007bff;
+      color: white;
+      font-weight: bold;
+    }
+    .card-body {
+      background-color: white;
+      padding: 20px;
+    }
+
+    /* Footer minimalista */
+    footer {
+      background-color: #343a40;
+      color: white;
+      padding: 10px 0;
+      text-align: center;
+    }
+    footer p {
+      margin-bottom: 0;
+      font-size: 12px;
+    }
+    footer a {
+      color: white;
+      text-decoration: none;
+      margin-left: 10px;
+      font-size: 14px;
+    }
+    footer a:hover {
+      color: #007bff;
+    }
+
+    /* Responsività */
+    @media (max-width: 992px) {
+      .navbar-brand {
+        font-size: 1.2rem; /* Ridurre la dimensione della scritta per schermi medi */
+      }
+    }
+
+    @media (max-width: 768px) {
+      .container {
+        padding-top: 20px; /* Ridurre il padding superiore per i dispositivi mobili */
+      }
+      .card-body {
+        padding: 15px; /* Ridurre il padding sulle card per dispositivi mobili */
+      }
+      footer p {
+        font-size: 10px; /* Font più piccolo per il footer su dispositivi mobili */
+      }
+      footer a {
+        font-size: 12px; /* Font per i link nel footer su dispositivi mobili */
+      }
+    }
+
+    @media (max-width: 576px) {
+      .navbar-brand {
+        font-size: 1rem; /* Ridurre ulteriormente la dimensione per schermi molto piccoli */
+      }
+      .nav-link {
+        font-size: 14px; /* Ridurre la dimensione del testo per i link della navbar */
+      }
+      footer p {
+        font-size: 10px;
+      }
+      .card {
+        width: 100%; /* Le card prendono tutta la larghezza disponibile sui dispositivi più piccoli */
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Navbar -->
+  <nav class="navbar navbar-expand-lg navbar-dark">
+    <div class="container-fluid">
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo03" aria-controls="navbarTogglerDemo03" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <a class="navbar-brand" href="#">CICCIO'S WORK</a>
+      <div class="collapse navbar-collapse" id="navbarTogglerDemo03">
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="/index">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="/form">Iscriviti</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Home Section -->
+  <div class="container d-flex justify-content-center flex-column align-items-center">
+    <div class="row">
+      <div class="col-md-6 col-12 mb-4">
+        <div class="card">
+          <div class="card-header">
+            Benvenuto nel Portale Lavoro
+          </div>
+          <div class="card-body">
+            <h5 class="card-title">Trova nuove opportunità</h5>
+            <p class="card-text">Iscriviti al nostro portale per essere aggiornato sulle migliori offerte di lavoro e connetterti con le aziende.</p>
+            <a href="/form" class="btn btn-primary">Iscriviti Ora</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-md-6 col-12 mb-4">
+        <div class="card">
+          <div class="card-header">
+            Perché iscriversi?
+          </div>
+          <div class="card-body">
+            <h5 class="card-title">Vantaggi del nostro servizio</h5>
+            <ul>
+              <li>Accesso alle migliori offerte di lavoro</li>
+              <li>Collegamento diretto con le aziende</li>
+              <li>Processo di registrazione semplice e veloce</li>
+            </ul>
+            <a href="/form" class="btn btn-primary">Registrati Subito</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  
+  <!-- Footer -->
+  <footer>
+    <p>&copy; 2025 CICCIO'S WORK. Tutti i diritti riservati.</p>
+    <a href="mailto:frank.caianiello@gmail.com">Email</a>
+    <a href="https://www.instagram.com/kekkocaia_20" target="_blank">Instagram</a>
+  </footer>
+
+</body>
+</html>
+
+
+
+ 
