@@ -1,0 +1,5 @@
+springPJ\mvc\monoSpring\config\MvcConfigurer.class
+springPJ\mvc\monoSpring\repository\IRepoUtente.class
+springPJ\mvc\monoSpring\MonoSpringApplication.class
+springPJ\mvc\monoSpring\controller\GestoreRichieste.class
+springPJ\mvc\monoSpring\model\Utente.class
